@@ -1,0 +1,210 @@
+<rdf:RDF xml:base="http://id.loc.gov/ontologies/bflc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <owl:Ontology rdf:about="" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-12-05T14:58:11.464-05:00</owl:versionInfo>
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">BIBFRAME vocabulary with LC extensions</rdfs:label>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-05T14:58:11.464-05:00</dcterms:modified>
+    <owl:imports rdf:resource="http://id.loc.gov/vocabulary/relators"/>
+    <owl:imports rdf:resource="http://id.loc.gov/ontologies/bibframe"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/EncodingLevel" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Encoding Level</rdfs:label>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Encoding Level</skos:definition>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">385, 386</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">03c</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">1</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/DemographicGroup" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Demographic Group</rdfs:label>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Demographic Group</skos:definition>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">385, 386</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">03d</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">2</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/CreatorCharacteristic" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Creator Characteristic</rdfs:label>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Creator Characteristic</skos:definition>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">385, 386</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">03e</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">3</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/AppliesTo" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Applies To</rdfs:label>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Applies To</skos:definition>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">$3 processing</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">05c</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">4</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/Relationship" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Relationship</rdfs:label>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Relationship</skos:definition>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">$4/e in 6XX, $i in 7XX</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">05d</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">5</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/Relation" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Relation</rdfs:label>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Relation</skos:definition>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">$4/e in 6XX, $i in 7XX</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">05e</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">6</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/MetdataLicensor" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">MetdataLicensor</rdfs:label>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">MetdataLicensor</skos:definition>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">"038</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">05f</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">7</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/MachineModel" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Machine Model</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/SystemRequirements" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Machine Model</skos:definition>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">753</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">05g</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">8</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/ProgrammingLanguage" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Programming Language</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/SystemRequirements" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Programming Language</skos:definition>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">753</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">05h</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">9</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/OperatingSystem" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Operating System</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/SystemRequirements" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Operating System</skos:definition>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">753</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">05i</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">10</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/ImageBitDepth" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Image Bit Depth</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/DigitalCharacteristic" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Image Bit Depth</skos:definition>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">05j</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">11</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/encodingLevel" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/EncodingLevel" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Encoding level</skos:definition>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Used with Unspecified</rdfs:comment>
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Encoding level</rdfs:label>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">263</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">03c</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">1</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/appliesTo" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/AppliesTo" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Applies To</skos:definition>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Used with Unspecified</rdfs:comment>
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Applies To</rdfs:label>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">$5 processing</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">03d</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">5</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/projectedPubDate" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bflc/Instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Projected publication date</skos:definition>
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Projected publication date</rdfs:label>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">385, 386</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">03e</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">2</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/demographicGroup" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/DemographicGroup" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Demographic Group</skos:definition>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Used with Unspecified</rdfs:comment>
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Demographic Group</rdfs:label>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">385386</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">03g</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">3</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/creatorCharacteristic" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/CreatorCharacteristic" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Creator Characteristic</skos:definition>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Used with Unspecified</rdfs:comment>
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Creator Characteristic</rdfs:label>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">$3 processing</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">03h</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">4</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/applicableInstitution" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Applicable Institution</skos:definition>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Used with Unspecified</rdfs:comment>
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Applicable Institution</rdfs:label>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">$4/e in 6XX, $i in 7XX</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">03i</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">6</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/relationship" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/Relationship" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Relationship</skos:definition>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Used with Unspecified</rdfs:comment>
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Relationship</rdfs:label>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">same</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">03j</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">7</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/relation" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/Relation" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Relation</skos:definition>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Used with Unspecified</rdfs:comment>
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Relation</rdfs:label>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">38</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">03k</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">8</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/metadataLicensor" xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/MetdataLicensor" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"/>
+    <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#">Metadata Licensor</skos:definition>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Used with Unspecified</rdfs:comment>
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Metadata Licensor</rdfs:label>
+    <bf-abstract:marcField xmlns:bf-abstract="http://bibframe.org/model-abstract/">720 ind=#,2 and no $4</bf-abstract:marcField>
+    <bf-abstract:sort xmlns:bf-abstract="http://bibframe.org/model-abstract/">03l</bf-abstract:sort>
+    <bf-abstract:pos xmlns:bf-abstract="http://bibframe.org/model-abstract/">9</bf-abstract:pos>
+    <bf-abstract:status xmlns:bf-abstract="http://bibframe.org/model-abstract/">accepted</bf-abstract:status>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2016-12-02 (New)</dcterms:modified>
+  </owl:ObjectProperty>
+</rdf:RDF>
