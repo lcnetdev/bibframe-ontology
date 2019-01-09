@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<owl:Ontology rdf:about="" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+ <rdfs:label>
+  BIBFRAME vocabulary with LC extensions
+ </rdfs:label>
+ <dcterms:modified>
+  2017-05-04T15:04:44.622-04:00
+ </dcterms:modified>
+ <owl:ontologyIRI rdf:resource="http://id.loc.gov/ontologies/bflc/"/>
+ <owl:versionIRI rdf:resource="http://id.loc.gov/ontologies/bflc-1-0-0/"/>
+ <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+  1.0.0
+ </owl:versionInfo>
+ <owl:imports rdf:resource="http://id.loc.gov/vocabulary/relators"/>
+ <owl:imports rdf:resource="http://id.loc.gov/ontologies/bibframe"/>
+</owl:Ontology>
