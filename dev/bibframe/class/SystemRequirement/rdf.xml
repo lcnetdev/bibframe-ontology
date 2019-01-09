@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/SystemRequirement" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+ <rdfs:label>
+  System Requirement
+ </rdfs:label>
+ <skos:definition>
+  Equipment or system requirements beyond what is normal and obvious for the type of carrier or type of file, such as make and model of equipment or hardware, operating system, amount of memory, programming language, other necessary software, any plug-ins or peripherals required to play, view, or run the resource, etc.
+ </skos:definition>
+ <dcterms:modified>
+  2017-02-06 (New)
+ </dcterms:modified>
+</owl:Class>

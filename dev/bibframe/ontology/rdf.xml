@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<owl:Ontology rdf:about="" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+ <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+  2.0.0
+ </owl:versionInfo>
+ <owl:ontologyIRI rdf:resource="http://id.loc.gov/ontologies/bibframe/"/>
+ <owl:versionIRI rdf:resource="http://id.loc.gov/ontologies/bibframe-2-0-0/"/>
+ <owl:priorVersion rdf:resource="http://id.loc.gov/ontologies/bibframe-2-0-0/"/>
+ <rdfs:label>
+  BIBFRAME vocabulary
+ </rdfs:label>
+ <dcterms:modified>
+  2019-01-02T15:31:00.639-05:00
+ </dcterms:modified>
+</owl:Ontology>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Scale" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+ <rdfs:label>
+  Scale
+ </rdfs:label>
+ <skos:definition>
+  Ratio of the dimensions of a form contained or embodied in a resource to the dimensions of the entity it represents, e.g., for images or cartographic resources.
+ </skos:definition>
+ <dcterms:modified>
+  2017-02-03 (New)
+ </dcterms:modified>
+</owl:Class>

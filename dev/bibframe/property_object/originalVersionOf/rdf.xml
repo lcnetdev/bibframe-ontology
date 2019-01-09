@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/originalVersionOf" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+ <skos:definition>
+  Original version of a resource.
+ </skos:definition>
+ <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/hasDerivative"/>
+ <rdfs:comment>
+  Used with Work or Instance
+ </rdfs:comment>
+ <rdfs:label>
+  Original version of
+ </rdfs:label>
+ <rdfs:comment>
+  Expected value Work or Instance
+ </rdfs:comment>
+ <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/originalVersion"/>
+ <dcterms:modified>
+  2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2016-04-29 (added inverse, updated range)
+ </dcterms:modified>
+</owl:ObjectProperty>
