@@ -5,7 +5,7 @@
  </rdfs:label>
  <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
  <skos:definition>
-  Resource comprised of multiple types which are not driven by software. This may include materials in two or more forms that are related by virtue of their having been accumulated by or about a person or body., archival fonds.
+  Resource comprised of multiple types which is not driven by software; for instance, a manuscript collection of text, photographs and sound recordings.
  </skos:definition>
  <dcterms:modified>
   2016-04-21 (New)

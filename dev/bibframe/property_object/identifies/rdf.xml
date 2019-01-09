@@ -5,7 +5,7 @@
   Resource that is associated with a character string that serves to differentiate one resource from another.
  </skos:definition>
  <rdfs:label>
-  Resouce identified
+  Resource identified
  </rdfs:label>
  <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/identifiedBy"/>
  <dcterms:modified>
