@@ -1,242 +1,587 @@
-<rdf:RDF xml:base="http://id.loc.gov/ontologies/bflc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/">
-  <owl:Ontology rdf:about="">
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-03-02T12:26:13.561-05:00</owl:versionInfo>
-    <rdfs:label>BIBFRAME vocabulary with LC extensions</rdfs:label>
-    <dcterms:modified>2017-03-02T12:26:13.561-05:00</dcterms:modified>
-    <owl:imports rdf:resource="http://id.loc.gov/vocabulary/relators"/>
-    <owl:imports rdf:resource="http://id.loc.gov/ontologies/bibframe"/>
-  </owl:Ontology>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/AppliesTo">
-    <rdfs:label>Applies to</rdfs:label>
-    <skos:definition>The component of a resource to which a charactreristic applies</skos:definition>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/CreatorCharacteristic">
-    <rdfs:label>Creator characteristic</rdfs:label>
-    <skos:definition>Category to which the creators of the resource belong.</skos:definition>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/DemographicGroup">
-    <rdfs:label>Demographic group</rdfs:label>
-    <skos:definition>Characteristics of a group of agents.</skos:definition>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/EncodingLevel">
-    <rdfs:label>Encoding level</rdfs:label>
-    <skos:definition>Designation of the fullness of the bibliographic description.</skos:definition>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/ImageBitDepth">
-    <rdfs:label>Image bit depth</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/DigitalCharacteristic"/>
-    <skos:definition>The number of bits used to represent each pixel in an image.</skos:definition>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/MachineModel">
-    <rdfs:label>Model</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/SystemRequirement"/>
-    <skos:definition>Model of the computing device on which the resource operates.</skos:definition>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/MetadataLicensor">
-    <rdfs:label>Metadata licensor</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
-    <skos:definition>Organization that licenses the intellectual property rights to the data contained in the description.</skos:definition>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/OperatingSystem">
-    <rdfs:label>Operating system</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/SystemRequirement"/>
-    <skos:definition>Software that directly operates a system's hardware.</skos:definition>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/Platform">
-    <rdfs:label/>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/SystemRequirement"/>
-    <skos:definition/>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/PrimaryContribution">
-    <rdfs:label>Primary contribution</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
-    <skos:definition>Contribution for which the agent is the name chosen as the name part of the name and title access point.</skos:definition>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/ProgrammingLanguage">
-    <rdfs:label>Programming language</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/SystemRequirement"/>
-    <skos:definition>Name of the programming language associated with the data comprising the resource.</skos:definition>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/Relation">
-    <rdfs:label>Relation</rdfs:label>
-    <skos:definition>Connection between resources.</skos:definition>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/Relationship">
-    <rdfs:label>Relationship</rdfs:label>
-    <skos:definition>Resource and its connection to another resource.</skos:definition>
-  </owl:Class>
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/demographicGroup">
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/DemographicGroup"/>
-    <skos:definition>Characteristics of a group of agents.</skos:definition>
-    <rdfs:comment>Domain? : </rdfs:comment>
-    <rdfs:label>Demographic group</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/creatorCharacteristic">
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/CreatorCharacteristic"/>
-    <skos:definition>Category to which the creators of the resource belong.</skos:definition>
-    <rdfs:comment>Domain? : </rdfs:comment>
-    <rdfs:label>Creator characteristic</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/projectedProvisionDate">
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/date"/>
-    <skos:definition>Projected date of publication of the resource.</skos:definition>
-    <rdfs:comment>Domain? : </rdfs:comment>
-    <rdfs:label>Projected publication date</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/metadataLicensor">
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bflc/AdminMetadata"/>
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/MetadataLicensor"/>
-    <skos:definition>Organization that licenses the intellectual property rights to the data contained in the description.</skos:definition>
-    <rdfs:label>Metadata licensor</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/encodingLevel">
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bflc/AdminMetadata"/>
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/EncodingLevel"/>
-    <skos:definition>Designation of the fullness of the bibliographic description.</skos:definition>
-    <rdfs:label>Encoding level</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/appliesTo">
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/AppliesTo"/>
-    <skos:definition>The component of a resource to which a charactreristic applies.</skos:definition>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>Applies to</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/applicableInstitution">
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
-    <skos:definition>Institutional location of a resource to which a particular piece of description applies.</skos:definition>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>Applicable institution</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/relationship">
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/Relationship"/>
-    <skos:definition>Resource and its connection to another resource.</skos:definition>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>Related resource and relationship</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/relation">
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/Relation"/>
-    <skos:definition>Connection between resources.</skos:definition>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>Specific relationship</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/name00MatchKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/name10MatchKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/name11MatchKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/name00MarcKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/name10MarcKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/name11MarcKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/primaryContributorName00MatchKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/primaryContributorName10MatchKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/primaryContributorName11MatchKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title00MatchKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title10MatchKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title11MatchKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title30MatchKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title40MatchKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title00MarcKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title10MarcKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title11MarcKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title30MarcKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title40MarcKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/titleSortKey">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>missingLabel</rdfs:label>
-  </owl:DatatypeProperty>
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xml:base="http://id.loc.gov/ontologies/bflc/" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+ <owl:Ontology rdf:about="">
+  <rdfs:label>
+   BIBFRAME vocabulary with LC extensions
+  </rdfs:label>
+  <dcterms:modified>
+   2017-05-04T15:04:44.622-04:00
+  </dcterms:modified>
+  <owl:ontologyIRI rdf:resource="http://id.loc.gov/ontologies/bflc/"/>
+  <owl:versionIRI rdf:resource="http://id.loc.gov/ontologies/bflc-1-0-0/"/>
+  <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+   1.0.0
+  </owl:versionInfo>
+  <owl:imports rdf:resource="http://id.loc.gov/vocabulary/relators"/>
+  <owl:imports rdf:resource="http://id.loc.gov/ontologies/bibframe"/>
+ </owl:Ontology>
+ <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/AppliesTo">
+  <rdfs:label>
+   Applies to
+  </rdfs:label>
+  <skos:definition>
+   The component of a resource to which a charactreristic applies
+  </skos:definition>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:Class>
+ <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/EncodingLevel">
+  <rdfs:label>
+   Encoding level
+  </rdfs:label>
+  <skos:definition>
+   Designation of the fullness of the bibliographic description.
+  </skos:definition>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:Class>
+ <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/MetadataLicensor">
+  <rdfs:label>
+   Metadata licensor
+  </rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  <skos:definition>
+   Organization that licenses the intellectual property rights to the data contained in the description.
+  </skos:definition>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:Class>
+ <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/PrimaryContribution">
+  <rdfs:label>
+   Primary contribution
+  </rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  <skos:definition>
+   Contribution for which the agent is the name chosen as the name part of the name and title access point.
+  </skos:definition>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:Class>
+ <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/Relation">
+  <rdfs:label>
+   Relation
+  </rdfs:label>
+  <skos:definition>
+   Connection between resources.
+  </skos:definition>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:Class>
+ <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/Relationship">
+  <rdfs:label>
+   Relationship
+  </rdfs:label>
+  <skos:definition>
+   Resource and its connection to another resource.
+  </skos:definition>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:Class>
+ <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/DemographicGroup">
+  <rdfs:label>
+   Demographic group
+  </rdfs:label>
+  <skos:definition>
+   Characteristics of a group of agents.
+  </skos:definition>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:Class>
+ <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/CreatorCharacteristic">
+  <rdfs:label>
+   Creator characteristic
+  </rdfs:label>
+  <skos:definition>
+   Category to which the creators of the resource belong.
+  </skos:definition>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:Class>
+ <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/MachineModel">
+  <rdfs:label>
+   Model
+  </rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/SystemRequirement"/>
+  <skos:definition>
+   Model of the computing device on which the resource operates.
+  </skos:definition>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:Class>
+ <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/ProgrammingLanguage">
+  <rdfs:label>
+   Programming language
+  </rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/SystemRequirement"/>
+  <skos:definition>
+   Name of the programming language associated with the data comprising the resource.
+  </skos:definition>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:Class>
+ <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/OperatingSystem">
+  <rdfs:label>
+   Operating system
+  </rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/SystemRequirement"/>
+  <skos:definition>
+   Software that directly operates a system's hardware and serves as a platform for applications.
+  </skos:definition>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:Class>
+ <owl:Class rdf:about="http://id.loc.gov/ontologies/bflc/ImageBitDepth">
+  <rdfs:label>
+   Image bit depth
+  </rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/DigitalCharacteristic"/>
+  <skos:definition>
+   The number of bits used to represent each pixel in an image.
+  </skos:definition>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:Class>
+ <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/demographicGroup">
+  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/DemographicGroup"/>
+  <skos:definition>
+   Characteristics of a group of agents.
+  </skos:definition>
+  <rdfs:comment>
+   Domain? :
+  </rdfs:comment>
+  <rdfs:label>
+   Demographic group
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:ObjectProperty>
+ <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/creatorCharacteristic">
+  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/CreatorCharacteristic"/>
+  <skos:definition>
+   Category to which the creators of the resource belong.
+  </skos:definition>
+  <rdfs:comment>
+   Domain? :
+  </rdfs:comment>
+  <rdfs:label>
+   Creator characteristic
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:ObjectProperty>
+ <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/projectedProvisionDate">
+  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/date"/>
+  <skos:definition>
+   Projected date of publication of the resource.
+  </skos:definition>
+  <rdfs:comment>
+   Domain? :
+  </rdfs:comment>
+  <rdfs:label>
+   Projected publication date
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:ObjectProperty>
+ <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/metadataLicensor">
+  <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bflc/AdminMetadata"/>
+  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/MetadataLicensor"/>
+  <skos:definition>
+   Organization that licenses the intellectual property rights to the data contained in the description.
+  </skos:definition>
+  <rdfs:label>
+   Metadata licensor
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:ObjectProperty>
+ <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/encodingLevel">
+  <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bflc/AdminMetadata"/>
+  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/EncodingLevel"/>
+  <skos:definition>
+   Designation of the fullness of the bibliographic description.
+  </skos:definition>
+  <rdfs:label>
+   Encoding level
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:ObjectProperty>
+ <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/appliesTo">
+  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/AppliesTo"/>
+  <skos:definition>
+   The component of a resource to which a charactreristic applies.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   Applies to
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:ObjectProperty>
+ <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/applicableInstitution">
+  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  <skos:definition>
+   Institutional location of a resource to which a particular piece of description applies.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   Applicable institution
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:ObjectProperty>
+ <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/relationship">
+  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/Relationship"/>
+  <skos:definition>
+   Resource and its connection to another resource.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   Related resource and relationship
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:ObjectProperty>
+ <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bflc/relation">
+  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bflc/Relation"/>
+  <skos:definition>
+   Connection between resources.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   Specific relationship
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:ObjectProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/name00MatchKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for name matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   Match key for X00 Name
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/name10MatchKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for name matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   Match key for X10 Name
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/name11MatchKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for name matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   Match key for X11 Name
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/name00MarcKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for personal name matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   MARC key for X00 Names
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/name10MarcKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for name matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   MARC key for X10 Names
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/name11MarcKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for name matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   MARC key for X11 Names
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/primaryContributorName00MatchKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for entry name matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   Primay X00 Name Match key
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/primaryContributorName10MatchKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for entry name matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   Primay X10 Name Match key
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/primaryContributorName11MatchKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for entry name matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   Primay X11 Name Match key
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title00MatchKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for title matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   Match key for Title X00
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title10MatchKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for title matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   Match key for Title X10
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title11MatchKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for title matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   Match key for Title X11
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title30MatchKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for title matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   title30MatchKey
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title40MatchKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for title matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   title40MatchKey
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title00MarcKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for title matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   title00MarcKey
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title10MarcKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for title matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   title10MarcKey
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title11MarcKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for title matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   title11MarcKey
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title30MarcKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for title matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   title30MarcKey
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/title40MarcKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for title matching.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   title40MarcKey
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
+ <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bflc/titleSortKey">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  <skos:definition>
+   String for sorting.
+  </skos:definition>
+  <rdfs:comment>
+   Used with Work, Instance or Item
+  </rdfs:comment>
+  <rdfs:label>
+   titleSortKey
+  </rdfs:label>
+  <dcterms:modified>
+   2017-02-02 (New)
+  </dcterms:modified>
+ </owl:DatatypeProperty>
 </rdf:RDF>
