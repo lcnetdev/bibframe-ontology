@@ -5,7 +5,7 @@
   Projected date of publication of the resource.
  </skos:definition>
  <rdfs:comment>
-  Domain? :
+  Used with Work, Instance or Item
  </rdfs:comment>
  <rdfs:label>
   Projected publication date

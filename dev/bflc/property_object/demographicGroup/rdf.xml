@@ -5,7 +5,7 @@
   Characteristics of a group of agents.
  </skos:definition>
  <rdfs:comment>
-  Domain? :
+  Used with Work, Instance or Item
  </rdfs:comment>
  <rdfs:label>
   Demographic group
