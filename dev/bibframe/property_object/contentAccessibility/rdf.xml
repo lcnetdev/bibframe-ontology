@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/contentAccessibility" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+ <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/ContentAccessibility"/>
+ <skos:definition>
+  Information that assists those with a sensory impairment for greater understanding of content, e.g., captions.
+ </skos:definition>
+ <rdfs:comment>
+  Used with Work or Instance
+ </rdfs:comment>
+ <rdfs:label>
+  Content accessibility information
+ </rdfs:label>
+ <dcterms:modified>
+  2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2017-02-03 (changed from data to object property)
+ </dcterms:modified>
+ <dcterms:modified>
+  2017-03-15 fixed typo in range
+ </dcterms:modified>
+</owl:ObjectProperty>
