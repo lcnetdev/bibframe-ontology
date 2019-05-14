@@ -1,5 +1,19 @@
 ## Bibframe & BFLC Changelog
 
+### BFLC 1.2.0
+Minor Release
+
+Link: [http://id.loc.gov/ontologies/bflc-1-2-0](http://id.loc.gov/ontologies/bflc-1-2-0)
+
+Changes
+ * New Classes
+    * [Relief](https://github.com/lcnetdev/bibframe-ontology/blob/master/dev/bflc/class/Relief/rdf.xml)
+
+  * New ObjectProperty  
+    * [relief](https://github.com/lcnetdev/bibframe-ontology/blob/master/dev/bflc/property_datatype/relief/rdf.xml)
+    
+---
+
 ### Bibframe 2.0.1
 Patch Release
 
