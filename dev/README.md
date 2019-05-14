@@ -10,8 +10,8 @@ Changes
     * [Relief](https://github.com/lcnetdev/bibframe-ontology/blob/master/dev/bflc/class/Relief/rdf.xml)
 
   * New ObjectProperty  
-    * [relief](https://github.com/lcnetdev/bibframe-ontology/blob/master/dev/bflc/property_datatype/relief/rdf.xml)
-    
+    * [relief](https://github.com/lcnetdev/bibframe-ontology/blob/master/dev/bflc/property_object/relief/rdf.xml)
+
 ---
 
 ### Bibframe 2.0.1
