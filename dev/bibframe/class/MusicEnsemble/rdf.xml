@@ -3,10 +3,14 @@
  <rdfs:label>
   Music ensemble
  </rdfs:label>
+ <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Ensemble"/>
  <skos:definition>
   Ensemble for which a musical work is appropriate.
  </skos:definition>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Changed subclass to Ensemble [GH56])
  </dcterms:modified>
 </owl:Class>

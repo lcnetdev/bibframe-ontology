@@ -5,13 +5,13 @@
  </skos:definition>
  <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/accompanies"/>
  <rdfs:comment>
-  Used with Work or Instance
+  Suggested use - With Work or Instance
  </rdfs:comment>
  <rdfs:label>
   Index to
  </rdfs:label>
  <rdfs:comment>
-  Expected value Work or Instance
+  Suggested value - Work or Instance
  </rdfs:comment>
  <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/index"/>
  <dcterms:modified>

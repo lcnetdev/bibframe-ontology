@@ -6,7 +6,13 @@
  <skos:definition>
   System of coding and organizing materials according to their subject.
  </skos:definition>
+ <skos:editorialNote>
+  Any entry from the Classification Schemes vocabulary at ID may be used; all have been defined as a bf:Classification
+ </skos:editorialNote>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Added editorial note [GH55])
  </dcterms:modified>
 </owl:Class>

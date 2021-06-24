@@ -5,7 +5,7 @@
   Information about the playing time, running time, etc. of a resource.
  </skos:definition>
  <rdfs:comment>
-  Used with Work or Instance
+  Suggested use - With Work or Instance
  </rdfs:comment>
  <rdfs:label>
   Duration

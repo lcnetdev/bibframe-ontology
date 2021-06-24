@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/subjectOf" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+ <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+ <skos:definition>
+  Relates a subject to that which it describes.
+ </skos:definition>
+ <rdfs:label>
+  Subject of
+ </rdfs:label>
+ <rdfs:comment>
+  Suggested value - Work, Instance, Item or Event
+ </rdfs:comment>
+ <dcterms:modified>
+  2021-06-09 (New [GH20])
+ </dcterms:modified>
+</owl:ObjectProperty>

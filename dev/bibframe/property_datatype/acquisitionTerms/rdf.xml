@@ -5,7 +5,7 @@
   Conditions under which the publisher, distributor, etc., will normally supply a resource, e.g., price of a resource.
  </skos:definition>
  <rdfs:comment>
-  Used with Work or Instance
+  Suggested use - With Work or Instance
  </rdfs:comment>
  <rdfs:label>
   Terms of acquisition

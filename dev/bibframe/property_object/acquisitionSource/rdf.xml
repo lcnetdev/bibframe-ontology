@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/acquisitionSource" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
- <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/AcquisitionSource"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
  <skos:definition>
   Information about an organization, person, etc., from which a resource may be obtained.
  </skos:definition>
  <rdfs:comment>
-  Used with Work or Instance
+  Suggested use - With Work or Instance
  </rdfs:comment>
  <rdfs:label>
   Source of acquisition
@@ -14,9 +14,9 @@
   2016-04-21 (New)
  </dcterms:modified>
  <dcterms:modified>
-  2017-02-06 (Changed from data to object property
+  2017-02-06 (Changed from data to object property, slight change to definition)
  </dcterms:modified>
  <dcterms:modified>
-  slight change to definition)
+  2021-06-09 (Removed range [GH63])
  </dcterms:modified>
 </owl:ObjectProperty>

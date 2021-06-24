@@ -5,10 +5,16 @@
  <skos:definition>
   Measurements of the carrier or carriers and/or the container of a resource.
  </skos:definition>
+ <skos:editorialNote>
+  See also the ARM Ontology for strategies to model this information in greater detail.
+ </skos:editorialNote>
  <rdfs:label>
   Dimensions
  </rdfs:label>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Added note [GH39])
  </dcterms:modified>
 </owl:DatatypeProperty>

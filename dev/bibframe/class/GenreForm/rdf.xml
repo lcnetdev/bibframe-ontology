@@ -4,9 +4,12 @@
   Genre/form
  </rdfs:label>
  <skos:definition>
-  Characteristics of works with similar plots, themes, settings, etc. (e.g., westerns, thrillers), or with a particular format of purpose (e.g., animation, short), or a combination (e.g., horror film where horror is the genre and film is the form).
+  Form category or genre to which a resource belongs.
  </skos:definition>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Broaden definition [GH17])
  </dcterms:modified>
 </owl:Class>

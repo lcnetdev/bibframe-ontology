@@ -3,10 +3,14 @@
  <rdfs:label>
   Base material
  </rdfs:label>
+ <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Material"/>
  <skos:definition>
   Underlying physical material of a resource.
  </skos:definition>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Changed subclass to Material [GH28])
  </dcterms:modified>
 </owl:Class>

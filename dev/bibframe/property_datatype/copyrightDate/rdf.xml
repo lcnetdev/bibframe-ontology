@@ -6,7 +6,7 @@
  </skos:definition>
  <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/date"/>
  <rdfs:comment>
-  Used with Work or Instance
+  Suggested use - With Work or Instance
  </rdfs:comment>
  <rdfs:label>
   Copyright date

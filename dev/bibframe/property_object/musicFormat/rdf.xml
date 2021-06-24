@@ -5,7 +5,7 @@
   Layout for content of a resource that is presented in the form of musical notation, such as full score, condensed score, vocal score, etc.
  </skos:definition>
  <rdfs:comment>
-  Used with Work or Instance
+  Suggested use - With Work or Instance
  </rdfs:comment>
  <rdfs:label>
   Format of notated music

@@ -5,9 +5,12 @@
  </rdfs:label>
  <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
  <skos:definition>
-  Uniform Resource Number.
+  Uniform Resource Name.
  </skos:definition>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Corrected definition [GH51])
  </dcterms:modified>
 </owl:Class>

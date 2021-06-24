@@ -5,7 +5,7 @@
   Categorization reflecting whether a resource is issued in one or more parts, the way it is updated, and its intended termination.
  </skos:definition>
  <rdfs:comment>
-  Used with Work or Instance
+  Suggested use - With Work or Instance
  </rdfs:comment>
  <rdfs:label>
   Mode of issuance

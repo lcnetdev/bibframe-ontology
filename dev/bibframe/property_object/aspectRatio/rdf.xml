@@ -5,7 +5,7 @@
   Proportional relationship between an image's width and its height.
  </skos:definition>
  <rdfs:comment>
-  Used with Work or Instance
+  Suggested use - With Work or Instance
  </rdfs:comment>
  <rdfs:label>
   Aspect ratio

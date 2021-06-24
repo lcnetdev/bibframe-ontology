@@ -7,9 +7,12 @@
  </skos:definition>
  <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/date"/>
  <rdfs:label>
-  Associated title date
+  Origin date
  </rdfs:label>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Better align definition with property name [GH50])
  </dcterms:modified>
 </owl:DatatypeProperty>

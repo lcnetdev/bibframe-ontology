@@ -5,7 +5,7 @@
   Classification number in any scheme.
  </skos:definition>
  <rdfs:comment>
-  Used with Work, Instance or Item
+  Suggested use - With Work, Instance or Item
  </rdfs:comment>
  <rdfs:label>
   Classification

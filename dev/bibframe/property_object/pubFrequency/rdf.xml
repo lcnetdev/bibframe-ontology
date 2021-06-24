@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/pubFrequency" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+ <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/PubFrequency"/>
+ <skos:definition>
+  Relates a resource to a publication frequency resource to capture such details as first issue, last issue, status, etc.
+ </skos:definition>
+ <rdfs:comment>
+  Suggested use - With Work or Instance
+ </rdfs:comment>
+ <rdfs:label>
+  Publication frequency
+ </rdfs:label>
+ <dcterms:modified>
+  2021-06-09 (New [GH76])
+ </dcterms:modified>
+</owl:ObjectProperty>

@@ -5,12 +5,15 @@
   Color characteristics, e.g., black and white, multicolored.
  </skos:definition>
  <rdfs:comment>
-  Used with Work or Instance
+  Suggested use - With Work, Instance or Item
  </rdfs:comment>
  <rdfs:label>
   Color content
  </rdfs:label>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Broaden range [GH31])
  </dcterms:modified>
 </owl:ObjectProperty>

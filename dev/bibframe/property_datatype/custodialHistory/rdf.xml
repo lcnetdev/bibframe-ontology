@@ -4,13 +4,19 @@
  <skos:definition>
   Information about the provenance, such as origin, ownership and custodial history (chain of custody), of a resource.
  </skos:definition>
+ <skos:editorialNote>
+  See also the ARM Ontology for strategies to model this information in greater detail.
+ </skos:editorialNote>
  <rdfs:comment>
-  Used with Work, Instance or Item
+  Suggested use - With Work, Instance or Item
  </rdfs:comment>
  <rdfs:label>
   Custodial history
  </rdfs:label>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Added note [GH38])
  </dcterms:modified>
 </owl:DatatypeProperty>

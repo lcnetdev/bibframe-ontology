@@ -4,13 +4,19 @@
  <skos:definition>
   Information on awards associated with the described resource.
  </skos:definition>
+ <skos:editorialNote>
+  See also the ARM Ontology for strategies to model this information in greater detail.
+ </skos:editorialNote>
  <rdfs:comment>
-  Used with Work or Instance
+  Suggested use - With Work or Instance
  </rdfs:comment>
  <rdfs:label>
   Award note
  </rdfs:label>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Added note [GH37])
  </dcterms:modified>
 </owl:DatatypeProperty>

@@ -4,9 +4,12 @@
   Event entity
  </rdfs:label>
  <skos:definition>
-  Something that happens at a certain time and location, such as a performance, speech, or athletic event, that is documented by a resource.
+  Something that happens at a certain time and location, such as a performance, speech, or athletic event.
  </skos:definition>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Broaden definition [GH12])
  </dcterms:modified>
 </owl:Class>

@@ -5,10 +5,16 @@
  <skos:definition>
   Size of the type used to represent the characters and symbols in a resource.
  </skos:definition>
+ <skos:editorialNote>
+  See also the ARM Ontology for strategies to model this information in greater detail.
+ </skos:editorialNote>
  <rdfs:label>
   Font size
  </rdfs:label>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Added note [GH40])
  </dcterms:modified>
 </owl:ObjectProperty>

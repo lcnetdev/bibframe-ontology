@@ -5,13 +5,13 @@
  </skos:definition>
  <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
  <rdfs:comment>
-  Used with Work, Instance or Item
+  Suggested use - With Work, Instance, Item or Event
  </rdfs:comment>
  <rdfs:label>
   Has part
  </rdfs:label>
  <rdfs:comment>
-  Expected value Work, Instance or Item
+  Suggested value - Work, Instance, Item or Event
  </rdfs:comment>
  <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/partOf"/>
  <dcterms:modified>
@@ -19,5 +19,8 @@
  </dcterms:modified>
  <dcterms:modified>
   2016-04-29 (added inverse)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Use with Event also [GH9])
  </dcterms:modified>
 </owl:ObjectProperty>

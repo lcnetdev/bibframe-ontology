@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/place" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
- <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+ <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
  <skos:definition>
   Geographic location or place entity associated with a resource or element of description, such as the place associated with the publication, printing, distribution, issue, release or production of a resource, place of an event.
  </skos:definition>
- <rdfs:comment>
-  Used with Unspecified
- </rdfs:comment>
  <rdfs:label>
   Place
  </rdfs:label>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Removed range [GH19])
  </dcterms:modified>
 </owl:ObjectProperty>

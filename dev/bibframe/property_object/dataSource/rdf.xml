@@ -5,13 +5,13 @@
  </skos:definition>
  <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
  <rdfs:comment>
-  Used with Work or Instance
+  Suggested use - With Work or Instance
  </rdfs:comment>
  <rdfs:label>
   Data source
  </rdfs:label>
  <rdfs:comment>
-  Expected value Work or Instance
+  Suggested value - Work or Instance
  </rdfs:comment>
  <dcterms:modified>
   2016-04-21 (New)

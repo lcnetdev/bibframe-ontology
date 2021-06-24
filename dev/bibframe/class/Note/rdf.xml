@@ -6,7 +6,13 @@
  <skos:definition>
   Information, usually in textual form, on attributes of a resource or some aspect of a resource.
  </skos:definition>
+ <skos:editorialNote>
+  Any entry from the Note Types vocabulary at ID may be used; all have been defined as a bf:Note
+ </skos:editorialNote>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Added editorial note [GH35])
  </dcterms:modified>
 </owl:Class>

@@ -5,7 +5,7 @@
   Information that assists those with a sensory impairment for greater understanding of content, e.g., captions.
  </skos:definition>
  <rdfs:comment>
-  Used with Work or Instance
+  Suggested use - With Work or Instance
  </rdfs:comment>
  <rdfs:label>
   Content accessibility information
@@ -17,6 +17,6 @@
   2017-02-03 (changed from data to object property)
  </dcterms:modified>
  <dcterms:modified>
-  2017-03-15 fixed typo in range
+  2017-03-15 (fixed typo in range)
  </dcterms:modified>
 </owl:ObjectProperty>
