@@ -130,10 +130,13 @@ Changes
     * [place - Removed range](commit)
     * [pubFrequency - New](commit)
     * [source - Removed range](commit)
+    * [subject - Broadened domain](commit)
     * [subjectOf - New](commit)
+    * [title - Broadened domain](commit)
     * [titleOf - New](commit)
   * Changes to Datatype Properties
     * [awards - Added note](commit)
+    * [collectionOrganization - New](commit)
     * [custodialHistory - Added note](commit)
     * [dimensions - Added note](commit)
     * [firstIssue - Removed domain](commit)
