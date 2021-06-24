@@ -722,7 +722,7 @@
    Information about the organization and arrangement of a collection of items. For instance, for computer files, organization and arrangement information may be the file structure and sort sequence of a file; for visual materials, this information may be how a collection is arranged.
   </skos:definition>
   <dcterms:modified>
-   2016-06-09 (New [GH77])
+   2021-06-09 (New [GH77])
   </dcterms:modified>
  </owl:Class>
  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Dissertation">
