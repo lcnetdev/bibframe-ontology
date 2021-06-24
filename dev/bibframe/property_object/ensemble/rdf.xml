@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/ensemble" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
  <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
- <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/MusicEnsemble"/>
+ <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Ensemble"/>
  <skos:definition>
-  Ensemble for which a musical work is appropriate.
+  Ensemble applicable to the Work.
  </skos:definition>
  <rdfs:label>
   Ensemble
  </rdfs:label>
  <dcterms:modified>
   2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2021-06-09 (Changed domain [GH56], Modified definition [GH56])
  </dcterms:modified>
 </owl:ObjectProperty>

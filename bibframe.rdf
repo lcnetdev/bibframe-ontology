@@ -13,7 +13,7 @@
    2021-06-10T12:00:00.000-05:00
   </dcterms:issued>
   <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-   2021-06-24T11:08:02.534-04:00
+   2021-06-24T13:27:14.395-04:00
   </dcterms:modified>
   <dcterms:description xml:lang="en">
    The Bibframe vocabulary consists of RDF classes and properties used for the description of items cataloged principally by libraries, but may also be used to describe items cataloged by museums and archives. Classes include the three core classes - Work, Instance, and Item - in addition to many more classes to support description. Properties describe characteristics of the resource being described as well as relationships among resources. For example: one Work might be a "translation of" another Work; an Instance may be an "instance of" a particular Bibframe Work. Other properties describe attributes of Works and Instances. For example: the Bibframe property "subject" expresses an important attribute of a Work (what the Work is about), and the property "extent" (e.g. number of pages) expresses an attribute of an Instance.
@@ -2875,9 +2875,9 @@
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/ensemble">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/MusicEnsemble"/>
+  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Ensemble"/>
   <skos:definition>
-   Ensemble for which a musical work is appropriate.
+   Ensemble applicable to the Work.
   </skos:definition>
   <rdfs:label>
    Ensemble
@@ -2885,9 +2885,12 @@
   <dcterms:modified>
    2016-04-21 (New)
   </dcterms:modified>
+  <dcterms:modified>
+   2021-06-09 (Changed domain [GH56], Modified definition [GH56])
+  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/ensembleType">
-  <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/MusicEnsemble"/>
+  <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Ensemble"/>
   <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   <skos:definition>
    Specific type of ensemble, such as orchestra, band, guitar ensemble.
@@ -2897,6 +2900,9 @@
   </rdfs:label>
   <dcterms:modified>
    2016-04-21 (New)
+  </dcterms:modified>
+  <dcterms:modified>
+   2021-06-09 (Changed domain [GH56])
   </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/voice">
