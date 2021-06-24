@@ -61,7 +61,7 @@ Github issues closed:
  * https://github.com/lcnetdev/bibframe-ontology/issues/76
  * https://github.com/lcnetdev/bibframe-ontology/issues/77
  * https://github.com/lcnetdev/bibframe-ontology/issues/78
- * 
+ * https://github.com/lcnetdev/bibframe-ontology/issues/79
  
 Changes
   * Changes to Existing Classes
