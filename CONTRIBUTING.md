@@ -1,13 +1,32 @@
-# Guidelines
+# Contributing
 
-This document describes the contribution process for the BIBFRAME Ontology. 
+Please file issues in GitHub for problems or questions with the ontology.  No pull 
+requests are accepted at this time.
 
-## Communication
+Issues help capture the nature and scope of the problem and (ideally) provide 
+space to recommend a change.
 
-Please use the [Bibliographic Framework Transition Initiative Forum](mailto:BIBFRAME@LISTSERV.LOC.GOV) for general discussion, questions and feedback.  
+## Issue Examples
 
-## Contributing
-Please file issues in GitHub for problems or questions with the ontology.  No pull requests are accepted at this time.
+Examples can help to succinctly convey what is desired and/or needed to submit and 
+best evaluate a request.  While the following examples are not perfect, they are nevertheless 
+representative of the nature and tone of what is needed to assess an issue as a 
+community.  One thing to take note of - specifically the two 'simpler' examples - 
+is that given the nature of the request, sometimes
+a short Issue is all that is really needed.
+
+Nevertheless do, please, read the following sections of this document and not rely
+exclusively on the examples.  The next section provides more context for the 
+Examples and the "Prior Engagement and Experimentation" section offers 
+additional strategies to embrace prior to submitting an issue.
+
+Simpler examples:
+- https://github.com/lcnetdev/bibframe-ontology/issues/78
+- https://github.com/lcnetdev/bibframe-ontology/issues/75
+
+More complex examples (for more complex issues):
+- https://github.com/lcnetdev/bibframe-ontology/issues/76
+- https://github.com/lcnetdev/bibframe-ontology/issues/77
 
 ## What makes a good GitHub Issue for the BF Vocabulary/Ontology?
 
@@ -33,18 +52,27 @@ comprehensively and clearly), GitHub issues do not need to be as polished, but t
 outline - introduction of problem, current state, issues with current state, and solution - 
 is essential to a good change process.
 
-## Examples
+## Prior Engagement and Experimentation
 
-These examples are not perfect, but they are nevertheless representative of the nature
-and tone of what is needed to assess an issue as a community.  One thing to take note of -
-specifically the two 'simpler' examples - is that given the nature of the request, sometimes
-a short Issue is all that is really needed.
+It is assumed that any individual and/or organization requesting a change to the ontology be 
+actually working with Bibframe data.  This is not an unreasonable expectation. 
 
-Simpler examples:
-- https://github.com/lcnetdev/bibframe-ontology/issues/78
-- https://github.com/lcnetdev/bibframe-ontology/issues/75
+Going further, experimentation before submitting change requests is encouraged.  There 
+is certainly a time and place for theoretical requests (i.e. requests without prior practical 
+implementation) but experimenting with something first establishes whether the solution worked 
+and is worth keeping.  
 
-More complex examples (for more complex issues):
-- https://github.com/lcnetdev/bibframe-ontology/issues/76
-- https://github.com/lcnetdev/bibframe-ontology/issues/77
+LC, for example, uses what is commonly referred to as the bflc namespace for experimentation.  It 
+is where LC minted the Hub class while experimenting with it for more than a year before 
+promoting it to the main ontology.  LC has minted other properties and classes that it tests with, 
+but which LC has not yet determined merit elevation.  It is also where LC creates properties that are 
+needed locally but which may never be promoted to the main ontology. 
 
+Real-life testing can strengthen a change request since it is made with some practical experience 
+behind the proposal.  Bibframe is about actually encoding information in real life; it is not a 
+conceptual model based on the theory of the ideal.  
+
+## Other Communication
+
+Please use the [Bibliographic Framework Transition Initiative Forum](mailto:BIBFRAME@LISTSERV.LOC.GOV) 
+for general discussion, questions and feedback.  
