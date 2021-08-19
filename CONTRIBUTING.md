@@ -48,12 +48,12 @@ whole: for example, proposing an inverse to an existing property *and* asking to
 remove the domain/range of the existing property should not be treated as discrete 
 requests. Thematically and functionally they are related. 
 
-The ideas in the above stem from the current MARC change process, which, if you are not familiar,
-takes the form first of "Discussion Papers" followed by "Proposals," if the discussion paper merits 
-advancement.  A sample [Discussion Paper](https://www.loc.gov/marc/mac/2021/2021-dp09.html); a sample 
-[Proposal](https://www.loc.gov/marc/mac/2021/2021-10.html).  To be clear, while an Issue that 
-rose to the level of MARC Discussion Paper would be welcomed (they do introduce and lay out the issue 
-comprehensively and clearly), GitHub issues do not need to be as polished, but the general 
+The ideas in the above stem from the current MARC change process, which take the form first of 
+"Discussion Papers" (sample [Discussion Paper](https://www.loc.gov/marc/mac/2021/2021-dp09.html))
+followed by "Proposals" (sample [Proposal](https://www.loc.gov/marc/mac/2021/2021-10.html)), 
+if the discussion paper merits advancement. To be clear, while a GitHub Issue that 
+rises to the level of MARC Discussion Paper would be welcome (they do introduce and lay out the issue 
+comprehensively and clearly), an Issue does not need to be as polished. The general 
 outline - introduction of problem, current state, issues with current state, and solution - 
 is essential to a good change process.
 
@@ -67,7 +67,7 @@ is certainly a time and place for theoretical requests (i.e. requests without pr
 implementation) but experimenting with something first establishes whether the solution worked 
 and is worth keeping.  
 
-LC, for example, uses what is commonly referred to as the bflc namespace for experimentation.  It 
+LC, for example, uses what is commonly referred to as the "bflc" namespace for experimentation.  It 
 is where LC minted the Hub class while experimenting with it for more than a year before 
 promoting it to the main ontology.  LC has minted other properties and classes that it tests with, 
 but which LC has not yet determined merit elevation.  It is also where LC creates properties that are 
