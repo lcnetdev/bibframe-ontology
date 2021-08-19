@@ -6,6 +6,11 @@ requests are accepted at this time.
 Issues help capture the nature and scope of the problem and (ideally) provide 
 space to recommend a change.
 
+- [Examples](#issue-examples)
+- [What makes for a good Issue](#what-makes-a-good-github-issue-for-the-bf-vocabularyontology)
+- [Prior engagement and experimentation](#prior-engagement-and-experimentation)
+- [Other communication](#other-communication)
+
 ## Issue Examples
 
 Examples can help to succinctly convey what is desired and/or needed to submit and 
