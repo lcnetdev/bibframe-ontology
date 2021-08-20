@@ -67,15 +67,26 @@ is certainly a time and place for theoretical requests (i.e. requests without pr
 implementation) but experimenting with something first establishes whether the solution worked 
 and is worth keeping.  
 
-LC, for example, uses what is commonly referred to as the "bflc" namespace for experimentation.  It 
+LC, for example, uses what is commonly referred to as the "bflc" namespace for experimentation.  Properties
+and classes using this namespace are readily identifiable in the data as they begin with "bflc:".  It 
 is where LC minted the Hub class while experimenting with it for more than a year before 
 promoting it to the main ontology.  LC has minted other properties and classes that it tests with, 
 but which LC has not yet determined merit elevation.  It is also where LC creates properties that are 
-needed locally but which may never be promoted to the main ontology. 
+needed locally but which may never be promoted to the main ontology. Implementers are encouraged to
+experiment in a local namespace first if possible.  For example, the University of Chicago might use 
+"bfuc:" as a prefix/namespace.
 
 Real-life testing can strengthen a change request since it is made with some practical experience 
 behind the proposal.  Bibframe is about actually encoding information in real life; it is not a 
 conceptual model based on the theory of the ideal.  
+
+## Issue Acceptance/Rejection/Resolution Process
+
+It is hoped that each issue will generate discussion sufficient to determine whether the proposed 
+solution is good, requires amendment, or should be rejected.  Periodically - ideally every 6 months but 
+at least once a year - LC will act on the issues accordingly.  There is no absolute process defined
+for this action, but it will certainly entail reaching out to representatives of institutional implementation
+partners for their thoughts or determination on proposals.
 
 ## Other Communication
 
