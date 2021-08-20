@@ -9,6 +9,7 @@ space to recommend a change.
 - [Examples](#issue-examples)
 - [What makes for a good Issue](#what-makes-a-good-github-issue-for-the-bf-vocabularyontology)
 - [Prior engagement and experimentation](#prior-engagement-and-experimentation)
+- [Issue Acceptance/Rejection/Resolution Process](#issue-acceptancerejectionresolution-process)
 - [Other communication](#other-communication)
 
 ## Issue Examples
@@ -86,7 +87,7 @@ It is hoped that each issue will generate discussion sufficient to determine whe
 solution is good, requires amendment, or should be rejected.  Periodically - ideally every 6 months but 
 at least once a year - LC will act on the issues accordingly.  There is no absolute process defined
 for this action, but it will certainly entail reaching out to representatives of institutional implementation
-partners for their thoughts or determination on proposals.
+partners for their thoughts or determinations on proposals.
 
 ## Other Communication
 
