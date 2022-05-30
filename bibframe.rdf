@@ -5402,7 +5402,7 @@
    Suggested use - With Work or Instance
   </rdfs:comment>
   <rdfs:label>
-   Preceded by
+   Replacement of
   </rdfs:label>
   <rdfs:comment>
    Suggested value - Work or Instance
@@ -5424,7 +5424,7 @@
    Suggested use - With Work or Instance
   </rdfs:comment>
   <rdfs:label>
-   Succeeded by
+   Replaced by
   </rdfs:label>
   <rdfs:comment>
    Suggested value - Work or Instance
