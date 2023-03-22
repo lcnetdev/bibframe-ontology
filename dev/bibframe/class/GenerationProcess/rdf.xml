@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/GenerationProcess" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/GenerationProcess" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:cc="http://creativecommons.org/ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
  <rdfs:label>
   Generation process
  </rdfs:label>
- <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
  <skos:definition>
   Indication of the program or process used to generate the description by application of a particular transformation.
  </skos:definition>
@@ -12,5 +11,8 @@
  </dcterms:modified>
  <dcterms:modified>
   2016-04-24 (fixed class name)
+ </dcterms:modified>
+ <dcterms:modified>
+  2022-10-03 (removed subClassOf [GH90])
  </dcterms:modified>
 </owl:Class>
