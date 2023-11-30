@@ -1,5 +1,63 @@
 ## Bibframe Changelog
 
+### Bibframe 2.2
+
+Link: [http://id.loc.gov/ontologies/bibframe-2-2-0](http://id.loc.gov/ontologies/bibframe-2-2-0)
+
+Github issues closed: 
+ * https://github.com/lcnetdev/bibframe-ontology/issues/43
+ * https://github.com/lcnetdev/bibframe-ontology/issues/68
+ * https://github.com/lcnetdev/bibframe-ontology/issues/69
+ * https://github.com/lcnetdev/bibframe-ontology/issues/70
+ * https://github.com/lcnetdev/bibframe-ontology/issues/71
+ * https://github.com/lcnetdev/bibframe-ontology/issues/72
+ * https://github.com/lcnetdev/bibframe-ontology/issues/73
+ * https://github.com/lcnetdev/bibframe-ontology/issues/74
+ * https://github.com/lcnetdev/bibframe-ontology/issues/83
+ * https://github.com/lcnetdev/bibframe-ontology/issues/85
+ * https://github.com/lcnetdev/bibframe-ontology/issues/90
+ * https://github.com/lcnetdev/bibframe-ontology/issues/91
+ * https://github.com/lcnetdev/bibframe-ontology/issues/92
+ * https://github.com/lcnetdev/bibframe-ontology/issues/93
+ * https://github.com/lcnetdev/bibframe-ontology/issues/96
+
+Changes
+  * New Classes
+    * [DescriptionLevel](https://id.loc.govontologies/bibframe.html#c_DescriptionLevel)
+    * [MusicAudio](https://id.loc.govontologies/bibframe.html#c_MusicAudio)
+    * [NonMusicAudio](https://id.loc.govontologies/bibframe.html#c_NonMusicAudio)
+    * [Integrating](https://id.loc.govontologies/bibframe.html#c_Integrating)
+    * [Kit](https://id.loc.govontologies/bibframe.html#c_Kit)
+    * [Monograph](https://id.loc.govontologies/bibframe.html#c_Monograph)
+    * [Serial](https://id.loc.govontologies/bibframe.html#c_Serial)
+    * [Series](https://id.loc.govontologies/bibframe.html#c_Series)
+    * [Modification](https://id.loc.govontologies/bibframe.html#c_Modification)
+    * [Binding](https://id.loc.govontologies/bibframe.html#c_Binding)
+
+  * Other changes to Classes
+    * [Multimedia](https://id.loc.govontologies/bibframe.html#c_Multimedia)
+    * [MixedMaterial](https://id.loc.govontologies/bibframe.html#c_MixedMaterial)
+    * [Manuscript](https://id.loc.govontologies/bibframe.html#c_Manuscript)
+    * [Collection](https://id.loc.govontologies/bibframe.html#c_Collection)
+    * [DescriptionConventions](https://id.loc.govontologies/bibframe.html#c_DescriptionConventions)
+    * [GenerationProcess](https://id.loc.govontologies/bibframe.html#c_GenerationProcess)
+
+  * New Properties
+    * [descriptionLevel](https://id.loc.govontologies/bibframe.html#p_descriptionLevel)
+
+  * Changes to Existing Properties 
+    * [language](https://id.loc.govontologies/bibframe.html#p_language)
+    * [content](https://id.loc.govontologies/bibframe.html#p_content)
+    * [media](https://id.loc.govontologies/bibframe.html#p_media)
+    * [carrier](https://id.loc.govontologies/bibframe.html#p_carrier)
+    * [originPlace](https://id.loc.govontologies/bibframe.html#p_originPlace)
+    * [validDate](https://id.loc.govontologies/bibframe.html#p_validDate)
+    * [intendedAudience](https://id.loc.govontologies/bibframe.html#p_intendedAudience)
+    * [binding](https://id.loc.govontologies/bibframe.html#p_binding)
+    * [precededBy](https://id.loc.govontologies/bibframe.html#p_precededBy)
+    * [succeededBy](https://id.loc.govontologies/bibframe.html#p_succeededBy)
+
+
 ### Bibframe 2.1
 Major release
 
