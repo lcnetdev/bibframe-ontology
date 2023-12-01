@@ -17,6 +17,6 @@
   2017-02-06 (Changed from data to object property, slight change to definition)
  </dcterms:modified>
  <dcterms:modified>
-  2021-06-09 (Removed range [GH63])
+  2021-06-09 (Broadened range [GH63])
  </dcterms:modified>
 </owl:ObjectProperty>

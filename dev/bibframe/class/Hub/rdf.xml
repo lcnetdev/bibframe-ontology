@@ -3,11 +3,13 @@
  <rdfs:label>
   Hub
  </rdfs:label>
- <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
  <skos:definition>
   An abstract resource that functions as a bridge between two Works.
  </skos:definition>
  <dcterms:modified>
   2021-06-09 (New [GH75])
+ </dcterms:modified>
+ <dcterms:modified>
+  2023-11-30 (moved to Basic Model Class [GH108])
  </dcterms:modified>
 </owl:Class>

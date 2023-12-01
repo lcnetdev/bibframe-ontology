@@ -1,5 +1,36 @@
 ## Bibframe Changelog
 
+### Bibframe 2.3
+
+Link: [http://id.loc.gov/ontologies/bibframe-2-3-0](http://id.loc.gov/ontologies/bibframe-2-3-0)
+
+Github issues closed: 
+ * https://github.com/lcnetdev/bibframe-ontology/issues/94
+ * https://github.com/lcnetdev/bibframe-ontology/issues/101
+ * https://github.com/lcnetdev/bibframe-ontology/issues/104
+ * https://github.com/lcnetdev/bibframe-ontology/issues/105
+ * https://github.com/lcnetdev/bibframe-ontology/issues/108
+ * https://github.com/lcnetdev/bibframe-ontology/issues/110
+
+Changes
+  * New Classes
+    * [Microform](https://id.loc.govontologies/bibframe.html#c_Microform)
+    * [TransliteratedTitle](https://id.loc.govontologies/bibframe.html#c_TransliteratedTitle)
+    * [Relief](https://id.loc.govontologies/bibframe.html#c_Relief)
+    * [PrimaryContribution](https://id.loc.govontologies/bibframe.html#c_PrimaryContribution)
+    * [CaptureStorage](https://id.loc.govontologies/bibframe.html#c_CaptureStorage)
+
+  * Other changes to Classes
+    * [Hub](https://id.loc.govontologies/bibframe.html#c_Hub)
+
+  * New Properties
+    * [relief](https://id.loc.govontologies/bibframe.html#p_relief)
+
+  * Changes to Existing Properties 
+    * [expressionOf](https://id.loc.govontologies/bibframe.html#p_expressionOf)
+    * [hasExpression](https://id.loc.govontologies/bibframe.html#p_hasExpression)
+
+
 ### Bibframe 2.2
 
 Link: [http://id.loc.gov/ontologies/bibframe-2-2-0](http://id.loc.gov/ontologies/bibframe-2-2-0)
