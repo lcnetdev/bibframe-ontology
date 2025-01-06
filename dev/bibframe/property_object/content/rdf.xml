@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/content" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:cc="http://creativecommons.org/ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/content" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bf-abstract="http://bibframe.org/model-abstract/" xmlns:cc="http://creativecommons.org/ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:marc-fields="http://bibframe.org/marc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rda-fields="http://bibframe.org/rda/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
  <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
  <skos:definition>
@@ -8,6 +8,18 @@
  <rdfs:label>
   Content type
  </rdfs:label>
+ <bf-abstract:marcField>
+  336
+ </bf-abstract:marcField>
+ <bf-abstract:sort>
+  05c
+ </bf-abstract:sort>
+ <bf-abstract:pos>
+  23
+ </bf-abstract:pos>
+ <bf-abstract:status>
+  accepted
+ </bf-abstract:status>
  <dcterms:modified>
   2016-04-21 (New)
  </dcterms:modified>

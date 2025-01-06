@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/notation" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:cc="http://creativecommons.org/ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/notation" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bf-abstract="http://bibframe.org/model-abstract/" xmlns:cc="http://creativecommons.org/ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:marc-fields="http://bibframe.org/marc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rda-fields="http://bibframe.org/rda/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Notation"/>
  <skos:definition>
   Alphabet, script, or symbol system used to convey the content of the resource, including specialized scripts, typefaces, tactile notation, movement notation, and musical notation.
@@ -10,6 +10,27 @@
  <rdfs:label>
   Notation system
  </rdfs:label>
+ <bf-abstract:marcField>
+  546--/b
+ </bf-abstract:marcField>
+ <bf-abstract:marcField>
+  007/01f
+ </bf-abstract:marcField>
+ <bf-abstract:marcField>
+  008/23 value f
+ </bf-abstract:marcField>
+ <bf-abstract:marcField>
+  008/29 value f
+ </bf-abstract:marcField>
+ <bf-abstract:sort>
+  11pa
+ </bf-abstract:sort>
+ <bf-abstract:pos>
+  66
+ </bf-abstract:pos>
+ <bf-abstract:status>
+  accepted
+ </bf-abstract:status>
  <dcterms:modified>
   2016-04-21 (New)
  </dcterms:modified>

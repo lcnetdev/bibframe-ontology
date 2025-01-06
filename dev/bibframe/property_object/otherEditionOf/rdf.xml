@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/otherEditionOf" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bf-abstract="http://bibframe.org/model-abstract/" xmlns:cc="http://creativecommons.org/ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:marc-fields="http://bibframe.org/marc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rda-fields="http://bibframe.org/rda/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+ <skos:definition>
+  Resource is an edition of another resource
+ </skos:definition>
+ <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/hasDerivative"/>
+ <rdfs:comment>
+  Suggested use - With Work or Instance
+ </rdfs:comment>
+ <rdfs:label>
+  Other edition of
+ </rdfs:label>
+ <rdfs:comment>
+  Suggested value - Work or Instance
+ </rdfs:comment>
+ <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/otherEdition"/>
+ <bf-abstract:sort>
+  31t
+ </bf-abstract:sort>
+ <bf-abstract:pos>
+  199
+ </bf-abstract:pos>
+ <bf-abstract:status>
+  bibframe deprecated
+ </bf-abstract:status>
+ <dcterms:modified>
+  2016-04-21 (New)
+ </dcterms:modified>
+ <dcterms:modified>
+  2016-05-13 (deleted)
+ </dcterms:modified>
+</owl:ObjectProperty>

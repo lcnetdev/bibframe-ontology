@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/hasSeries" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:cc="http://creativecommons.org/ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/hasSeries" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bf-abstract="http://bibframe.org/model-abstract/" xmlns:cc="http://creativecommons.org/ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:marc-fields="http://bibframe.org/marc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rda-fields="http://bibframe.org/rda/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
  <skos:definition>
-  Resource in which the part has been issued; the title of the larger resource appears on the part.
+  Relation between a resource and the larger resource in which it has been issued; the title of the encompassing larger resource features on the part
  </skos:definition>
  <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/partOf"/>
  <rdfs:comment>
@@ -14,10 +14,25 @@
   Suggested value - Work or Instance
  </rdfs:comment>
  <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/seriesOf"/>
+ <bf-abstract:marcField>
+  400,410,411,430, 440,490,800,810,811,830
+ </bf-abstract:marcField>
+ <bf-abstract:sort>
+  31g
+ </bf-abstract:sort>
+ <bf-abstract:pos>
+  184
+ </bf-abstract:pos>
+ <bf-abstract:status>
+  accepted
+ </bf-abstract:status>
  <dcterms:modified>
   2016-04-21 (New)
  </dcterms:modified>
  <dcterms:modified>
   2016-04-29 (added inverse, updated range)
+ </dcterms:modified>
+ <dcterms:modified>
+  2024-07-10 (updated definition [GF106])
  </dcterms:modified>
 </owl:ObjectProperty>
