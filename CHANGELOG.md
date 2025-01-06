@@ -1,5 +1,40 @@
 ## Bibframe Changelog
 
+### Bibframe 2.4
+
+Link: [http://id.loc.gov/ontologies/bibframe-2-4-0](http://id.loc.gov/ontologies/bibframe-2-4-0)
+
+Github issues closed: 
+ * https://github.com/lcnetdev/bibframe-ontology/issues/88
+ * https://github.com/lcnetdev/bibframe-ontology/issues/100
+ * https://github.com/lcnetdev/bibframe-ontology/issues/106
+ * https://github.com/lcnetdev/bibframe-ontology/issues/116
+ * https://github.com/lcnetdev/bibframe-ontology/issues/119
+ * https://github.com/lcnetdev/bibframe-ontology/issues/120
+ * https://github.com/lcnetdev/bibframe-ontology/issues/124
+
+Changes
+  * New Classes
+    * [Relation](https://id.loc.govontologies/bibframe.html#c_Relation)
+    * [Relationship](https://id.loc.govontologies/bibframe.html#c_Relationship)
+    * [ClassificaionNal](https://id.loc.gov/ontologies/bibframe.html#c_ClassificationNal)
+    * [OclcNumber](https://id.loc.govontologies/bibframe.html#c_OclcNumber)
+
+  * New Properties
+    * [relation](https://id.loc.govontologies/bibframe.html#p_relation)
+    * [relationship](https://id.loc.govontologies/bibframe.html#p_relationship)
+    * [associatedResource](https://id.loc.govontologies/bibframe.html#p_associatedResource)
+    * [copyrightStatement](https://id.loc.govontologies/bibframe.html#p_copyrightStatement)
+    * [distributionStatement](https://id.loc.govontologies/bibframe.html#p_distributionStatement)
+    * [manufactureStatement](https://id.loc.govontologies/bibframe.html#p_manufactureStatement)
+    * [productionStatement](https://id.loc.govontologies/bibframe.html#p_productionStatement)
+
+  * Changes to Existing Properties 
+    * [hasSeries](https://id.loc.govontologies/bibframe.html#p_hasSeries)
+    * [hasSubseries](https://id.loc.govontologies/bibframe.html#p_hasSubseries)
+    * [seriesEnumeration](https://id.loc.govontologies/bibframe.html#p_seriesEnumeration)
+
+
 ### Bibframe 2.3
 
 Link: [http://id.loc.gov/ontologies/bibframe-2-3-0](http://id.loc.gov/ontologies/bibframe-2-3-0)
