@@ -2,18 +2,18 @@
 <rdf:RDF xml:base="http://id.loc.gov/ontologies/bibframe/" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bf-abstract="http://bibframe.org/model-abstract/" xmlns:cc="http://creativecommons.org/ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:marc-fields="http://bibframe.org/marc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rda-fields="http://bibframe.org/rda/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
  <owl:Ontology rdf:about="http://id.loc.gov/ontologies/bibframe/">
   <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-   2.5.0
+   2.4.0
   </owl:versionInfo>
-  <owl:versionIRI rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
-  <owl:priorVersion rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+  <owl:versionIRI rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+  <owl:priorVersion rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
   <rdfs:label>
    BIBFRAME vocabulary
   </rdfs:label>
   <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-   2025-01-24T12:00:00.000-05:00
+   2024-08-23T12:00:00.000-05:00
   </dcterms:issued>
   <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-   2025-02-10T09:52:36.66620558-05:00
+   2024-08-23T12:55:43.555263-04:00
   </dcterms:modified>
   <dcterms:description xml:lang="en">
    The Bibframe vocabulary consists of RDF classes and properties used for the description of items cataloged principally by libraries, but may also be used to describe items cataloged by museums and archives. Classes include the three core classes - Work, Instance, and Item - in addition to many more classes to support description. Properties describe characteristics of the resource being described as well as relationships among resources. For example: one Work might be a "translation of" another Work; an Instance may be an "instance of" a particular Bibframe Work. Other properties describe attributes of Works and Instances. For example: the Bibframe property "subject" expresses an important attribute of a Work (what the Work is about), and the property "extent" (e.g. number of pages) expresses an attribute of an Instance.
@@ -5000,6 +5000,7 @@
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/identifiedBy">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
   <skos:definition>
    Character string associated with a resource that serves to differentiate that resource from other resources, i.e., that uniquely identifies an entity.
@@ -5026,12 +5027,10 @@
   <dcterms:modified>
    2017-05-04 (New inverse)
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/identifies">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Resource that is associated with a character string that serves to differentiate one resource from another.
   </skos:definition>
@@ -5051,11 +5050,9 @@
   <dcterms:modified>
    2017-02-03 (New inverse)
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/qualifier">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   <skos:definition>
    Qualifier of information, such as an addition to a title to make it unique or qualifying information associated with an identifier.
@@ -5078,11 +5075,9 @@
   <dcterms:modified>
    2016-04-21 (New)
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/adminMetadata">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
   <skos:definition>
    Metadata about the metadata, especially provenance information.
@@ -5120,12 +5115,10 @@
   <dcterms:modified>
    2016-04-21 (New)
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/adminMetadataFor">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Relates an Administrative metadata resource to the resource it captures information about.
   </skos:definition>
@@ -5144,12 +5137,10 @@
   <dcterms:modified>
    2021-06-09 (New [GH59])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/noteFor">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Relates a Note resource to the resource to which the note pertains.
   </skos:definition>
@@ -5168,11 +5159,10 @@
   <dcterms:modified>
    2021-06-09 (New [GH34])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/date">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   <skos:definition>
    Date designation associated with a resource or element of description, such as date of title variation; year a degree was awarded; date associated with the publication, printing, distribution, issue, release or production of a resource. May be date typed.
   </skos:definition>
@@ -5191,20 +5181,16 @@
   <dcterms:modified>
    2016-04-21 (New)
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Removed defined range [GH125])
-  </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/place">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Geographic location or place entity associated with a resource or element of description, such as the place associated with the publication, printing, distribution, issue, release or production of a resource, place of an event.
   </skos:definition>
   <rdfs:label>
    Place
   </rdfs:label>
-  <rdfs:comment>
-   Suggested value - bf:Place or madsrdf:Geographic
-  </rdfs:comment>
   <bf-abstract:sort>
    03k
   </bf-abstract:sort>
@@ -5220,20 +5206,16 @@
   <dcterms:modified>
    2021-06-09 (Broadened range [GH19])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/agent">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Entity associated with a resource or element of description, such as the name of the entity responsible for the content or of the publication, printing, distribution, issue, release or production of a resource.
   </skos:definition>
   <rdfs:label>
    Associated agent
   </rdfs:label>
-  <rdfs:comment>
-   Suggested value - bf:Agent or foaf:Agent
-  </rdfs:comment>
   <bf-abstract:marcField>
    720 ind=#,2 and no $4
   </bf-abstract:marcField>
@@ -5252,17 +5234,13 @@
   <dcterms:modified>
    2021-06-09 (Broadened range [GH63])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/agentOf">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Property relating an agent, such as an entity responsible for the content or of the publication, printing, distribution, issue, release or production, to another resource.
   </skos:definition>
-  <rdfs:comment>
-   Suggested use - With bf:Agent or foaf:Agent
-  </rdfs:comment>
   <rdfs:label>
    Associated agent of
   </rdfs:label>
@@ -5278,11 +5256,9 @@
   <dcterms:modified>
    2021-06-09 (New [GH3])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/count">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   <skos:definition>
    Number associated with a measure of units, such as the number of units and/or subunits making up a resource.
@@ -5302,11 +5278,9 @@
   <dcterms:modified>
    2016-04-21 (New)
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/unit">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Unit"/>
   <skos:definition>
    Units in which a value is expressed, such as the physical or logical constituent of a resource (e.g., a volume, audiocassette, film reel, a map, a digital file).
@@ -5326,11 +5300,9 @@
   <dcterms:modified>
    2016-04-21 (New)
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/code">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   <skos:definition>
    String of characters that serves as a code representing information.
@@ -5350,20 +5322,16 @@
   <dcterms:modified>
    2016-04-21 (New)
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/assigner">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Entity that assigned the metadata, such as the entity that assigned a classification number, entity that assigned a name, entity that assigned an identifier.
   </skos:definition>
   <rdfs:label>
    Assigner
   </rdfs:label>
-  <rdfs:comment>
-   Suggested value - bf:Organization or bf:Assigner
-  </rdfs:comment>
   <bf-abstract:sort>
    03o9
   </bf-abstract:sort>
@@ -5379,20 +5347,16 @@
   <dcterms:modified>
    2021-06-09 (Broaden domain [GH60], Broadened range [GH63])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/source">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Resource from which value or label came or was derived, such as the formal source/scheme from which a classification number is taken or derived, list from which an agent name is taken or derived, source within which an identifier is unique.
   </skos:definition>
   <rdfs:label>
    Source
   </rdfs:label>
-  <rdfs:comment>
-   Suggested value - bf:Organization or bf:Assigner
-  </rdfs:comment>
   <bf-abstract:sort>
    03q
   </bf-abstract:sort>
@@ -5408,11 +5372,9 @@
   <dcterms:modified>
    2021-06-09 (Broadened range [GH63])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/note">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
   <skos:definition>
    General textual information relating to a resource, such as Information about a specific copy of a resource or information about a particular attribute of a resource.
@@ -5438,11 +5400,9 @@
   <dcterms:modified>
    2016-04-21 (New)
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/status">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
   <skos:definition>
    Designation of the validity or position of something, such as indication that the classification number is canceled or invalid, circulation availability of an item, indication of whether the identifier is canceled or invalid.
@@ -5462,11 +5422,9 @@
   <dcterms:modified>
    2016-04-21 (New)
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/part">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   <skos:definition>
    Part of a resource to which information applies.
@@ -5486,20 +5444,16 @@
   <dcterms:modified>
    2016-04-21 (New)
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/language">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Language associated with a resource or its parts.
   </skos:definition>
   <rdfs:label>
    Language information
   </rdfs:label>
-  <rdfs:comment>
-   Suggested value - bf:Language or madsrdf:Language
-  </rdfs:comment>
   <bf-abstract:marcField>
    546--/3+a
   </bf-abstract:marcField>
@@ -5518,21 +5472,16 @@
   <dcterms:modified>
    2022-10-03 (Broadened range [GH70])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/content">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Categorization reflecting the fundamental form of communication in which the content is expressed and the human sense through which it is intended to be perceived.
   </skos:definition>
   <rdfs:label>
    Content type
   </rdfs:label>
-  <rdfs:comment>
-   Suggested value - bf:Content or skos:Concept
-  </rdfs:comment>
   <bf-abstract:marcField>
    336
   </bf-abstract:marcField>
@@ -5551,11 +5500,9 @@
   <dcterms:modified>
    2022-10-03 (Broadened range [GH71])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/media">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Categorization reflecting the general type of intermediation device required to view, play, run, etc., the content of a resource.
   </skos:definition>
@@ -5565,9 +5512,6 @@
   <rdfs:label>
    Media type
   </rdfs:label>
-  <rdfs:comment>
-   Suggested value - bf:Media or skos:Concept
-  </rdfs:comment>
   <bf-abstract:marcField>
    337
   </bf-abstract:marcField>
@@ -5589,21 +5533,16 @@
   <dcterms:modified>
    2022-10-03 (Broadened range [GH73])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/carrier">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Categorization reflecting the format of the storage medium and housing of a carrier.
   </skos:definition>
   <rdfs:label>
    Carrier type
   </rdfs:label>
-  <rdfs:comment>
-   Suggested value - bf:Carrier or skos:Concept
-  </rdfs:comment>
   <bf-abstract:marcField>
    338
   </bf-abstract:marcField>
@@ -5631,11 +5570,9 @@
   <dcterms:modified>
    2022-10-03 (Broadened range [GH72])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/genreForm">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Form category or genre to which a resource belongs
   </skos:definition>
@@ -5645,9 +5582,6 @@
   <rdfs:label>
    Genre/form
   </rdfs:label>
-  <rdfs:comment>
-   Suggested value - bf:GenreForm or madsrdf:GenreForm or skos:Concept
-  </rdfs:comment>
   <bf-abstract:marcField>
    008/24-27 (codes)
   </bf-abstract:marcField>
@@ -5674,9 +5608,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2021-06-09 (Broadened range [GH16])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/title">
@@ -5878,6 +5809,7 @@
  </owl:DatatypeProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/originDate">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   <skos:definition>
    Date or date range associated with the creation of a Work.
   </skos:definition>
@@ -5909,11 +5841,9 @@
   <dcterms:modified>
    2021-06-09 (Better align definition with property name [GH50])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/originPlace">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Place from which the creation of the resource originated.
   </skos:definition>
@@ -5924,9 +5854,6 @@
   <rdfs:label>
    Origin place
   </rdfs:label>
-  <rdfs:comment>
-   Suggested value - bf:Place or madsrdf:Geographic
-  </rdfs:comment>
   <bf-abstract:marcField>
    A370--/g
   </bf-abstract:marcField>
@@ -5947,9 +5874,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2022-10-03 (updated domain [GH83])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/historyOfWork">
@@ -6357,15 +6281,14 @@
   </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/geographicCoverage">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/GeographicCoverage"/>
   <skos:definition>
    Geographic coverage of the content of the resource.
   </skos:definition>
   <rdfs:label>
    Geographic coverage
   </rdfs:label>
-  <rdfs:comment>
-   Suggested value - bf:GeographicCoverage or bf:Place or madsrdf:Geographic
-  </rdfs:comment>
   <bf-abstract:marcField>
    522
   </bf-abstract:marcField>
@@ -6392,9 +6315,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2021-06-09 (Removed domain [GH15])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/temporalCoverage">
@@ -6429,6 +6349,7 @@
   </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/intendedAudience">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Information that identifies the specific audience or intellectual level for which the content of the resource is considered appropriate.
   </skos:definition>
@@ -6458,9 +6379,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2022-10-03 (Broadened range [GH74])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/collectionArrangement">
@@ -6674,6 +6592,7 @@
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/grantingInstitution">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Dissertation"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Name of degree granting institution.
   </skos:definition>
@@ -6697,9 +6616,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2021-06-09 (Broadened range [GH63])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/summary">
@@ -7300,6 +7216,7 @@
   </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/subject">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Subject term(s) describing a resource.
   </skos:definition>
@@ -7309,9 +7226,6 @@
   <rdfs:label>
    Subject
   </rdfs:label>
-  <rdfs:comment>
-   Suggested value - bf:Agent or bf:Topic or bf:Hub
-  </rdfs:comment>
   <bf-abstract:marcField>
    6XX, 043
   </bf-abstract:marcField>
@@ -7330,17 +7244,12 @@
   <dcterms:modified>
    2021-06-09 (Broadened domain [GH21])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/subjectOf">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Relates a subject to that which it describes.
   </skos:definition>
-  <rdfs:comment>
-   Suggested use - With bf:Agent or bf:Topic or bf:Hub
-  </rdfs:comment>
   <rdfs:label>
    Subject of
   </rdfs:label>
@@ -7358,9 +7267,6 @@
   </bf-abstract:status>
   <dcterms:modified>
    2021-06-09 (New [GH20])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/classification">
@@ -7889,6 +7795,7 @@
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/frequency">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Frequency"/>
   <skos:definition>
    Intervals at which the parts of a serially produced resource or the updates to an integrating resource are issued.
@@ -7913,9 +7820,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2021-06-09 (Removed domain [GH76])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/preferredCitation">
@@ -7976,6 +7880,7 @@
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/firstIssue">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   <skos:definition>
    Beginning date of a resource and/or the sequential designations.
@@ -8001,11 +7906,9 @@
   <dcterms:modified>
    2021-06-09 (Removed domain [GH76])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/lastIssue">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   <skos:definition>
    Ending date of a resource and/or the sequential designations.
@@ -8030,9 +7933,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2021-06-09 (Removed domain [GH76])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/provisionActivity">
@@ -8149,6 +8049,7 @@
   </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/acquisitionSource">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Information about an organization, person, etc., from which a resource may be obtained.
   </skos:definition>
@@ -8175,9 +8076,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2021-06-09 (Broadened range [GH63])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/copyrightRegistration">
@@ -8314,6 +8212,7 @@
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/extent">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
   <skos:definition>
    Number and type of units and/or subunits making up a resource.
@@ -8338,9 +8237,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2021-06-09 (Broadened range [GH30])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/dimensions">
@@ -8375,6 +8271,7 @@
   </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/material">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Resource uses, is composed of, integrates, etc. the related material.
   </skos:definition>
@@ -8396,11 +8293,9 @@
   <dcterms:modified>
    2021-06-09 (New [GH26])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/materialOf">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    This material is related to a resource.
   </skos:definition>
@@ -8422,11 +8317,9 @@
   <dcterms:modified>
    2021-06-09 (New [GH26])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/baseMaterial">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Underlying physical material of a resource.
   </skos:definition>
@@ -8452,12 +8345,10 @@
   <dcterms:modified>
    2021-06-09 (Broadened range [GH24], Broadened domain, Made subproperty of material [GH26])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/baseMaterialOf">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Relates a Material resource to that which it is the base material of.
   </skos:definition>
@@ -8477,11 +8368,9 @@
   <dcterms:modified>
    2021-06-09 (New [GH25])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/appliedMaterial">
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Physical or chemical substance applied to a base material of a resource.
   </skos:definition>
@@ -8507,12 +8396,10 @@
   <dcterms:modified>
    2021-06-09 (Broadened range [GH24], Broadened domain, Made subproperty of material [GH26])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/appliedMaterialOf">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Relates a Material resource to that which it is the applied material of.
   </skos:definition>
@@ -8531,9 +8418,6 @@
   </bf-abstract:status>
   <dcterms:modified>
    2021-06-09 (New [GH25])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/emulsion">
@@ -8560,6 +8444,7 @@
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/mount">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Physical material or object used for the support or backing to which the base material of a resource has been attached.
   </skos:definition>
@@ -8580,9 +8465,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2021-06-09 (Modified label [GH29])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/productionMethod">
@@ -8866,6 +8748,7 @@
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/binding">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    A method used to bind a published or unpublished resource,or other binding information.
   </skos:definition>
@@ -8883,9 +8766,6 @@
   </bf-abstract:status>
   <dcterms:modified>
    2022-10-03 (New [GH91])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/enumerationAndChronology">
@@ -8918,6 +8798,7 @@
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/heldBy">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Entity holding the item or from which it is available.
   </skos:definition>
@@ -8941,9 +8822,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2021-06-09 (Broadened range [GH63])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/sublocation">
@@ -9016,6 +8894,8 @@
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/electronicLocator">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Electronic location from which the resource is available.
   </skos:definition>
@@ -9036,9 +8916,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2021-06-09 (Removed domain [GH66])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/barcode">
@@ -9144,6 +9021,8 @@
   </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:SymmetricProperty rdf:about="http://id.loc.gov/ontologies/bibframe/relatedTo">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Any relationship between Work, Instance, Item, and Event resources
   </skos:definition>
@@ -9167,9 +9046,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2021-06-09 (Modified definition [GH2])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:SymmetricProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/hasInstance">
@@ -9366,7 +9242,7 @@
    accepted
   </bf-abstract:status>
   <dcterms:modified>
-   2022-07-10 (New [GH116])
+   2024-07-10 (New [GH116])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/hasItem">
@@ -9405,7 +9281,7 @@
    Associated resource and its relationship to the resource being described
   </skos:definition>
   <rdfs:comment>
-   Suggested use - With Work, Instance or Item
+   Suggested use - With Hub, Work, Instance or Item
   </rdfs:comment>
   <rdfs:label>
    Relation
@@ -9420,7 +9296,7 @@
    accepted
   </bf-abstract:status>
   <dcterms:modified>
-   2022-07-10 (New [GH116])
+   2024-07-10 (New [GH116])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/relationship">
@@ -9442,7 +9318,7 @@
    accepted
   </bf-abstract:status>
   <dcterms:modified>
-   2022-07-10 (New [GH116])
+   2024-07-10 (New [GH116])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/eventContent">
@@ -11148,6 +11024,7 @@
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/derivedFrom">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Link to the metadata that was the source of the data
   </skos:definition>
@@ -11171,9 +11048,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2021-06-09 (Broadened range [GH41])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/changeDate">
@@ -11311,6 +11185,7 @@
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/descriptionModifier">
   <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <skos:definition>
    Agency that modified a description
   </skos:definition>
@@ -11334,9 +11209,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2021-06-09 (Broadened range [GH63])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/descriptionAuthentication">

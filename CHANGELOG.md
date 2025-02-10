@@ -1,5 +1,14 @@
 ## Bibframe Changelog
 
+### Bibframe 2.5
+
+Link: [http://id.loc.gov/ontologies/bibframe-2-5-0](http://id.loc.gov/ontologies/bibframe-2-5-0)
+
+Github issues closed, entirely or partially: 
+ * https://github.com/lcnetdev/bibframe-ontology/issues/121
+ * https://github.com/lcnetdev/bibframe-ontology/issues/125
+
+
 ### Bibframe 2.4
 
 Link: [http://id.loc.gov/ontologies/bibframe-2-4-0](http://id.loc.gov/ontologies/bibframe-2-4-0)

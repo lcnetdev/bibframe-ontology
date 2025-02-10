@@ -5,7 +5,7 @@
   Associated resource and its relationship to the resource being described
  </skos:definition>
  <rdfs:comment>
-  Suggested use - With Hub, Work, Instance or Item
+  Suggested use - With Work, Instance or Item
  </rdfs:comment>
  <rdfs:label>
   Relation
@@ -20,6 +20,6 @@
   accepted
  </bf-abstract:status>
  <dcterms:modified>
-  2024-07-10 (New [GH116])
+  2022-07-10 (New [GH116])
  </dcterms:modified>
 </owl:ObjectProperty>
