@@ -2,18 +2,18 @@
 <rdf:RDF xml:base="http://id.loc.gov/ontologies/bibframe/" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bf-abstract="http://bibframe.org/model-abstract/" xmlns:cc="http://creativecommons.org/ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:marc-fields="http://bibframe.org/marc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rda-fields="http://bibframe.org/rda/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
  <owl:Ontology rdf:about="http://id.loc.gov/ontologies/bibframe/">
   <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-   2.6.0
+   2.5.0
   </owl:versionInfo>
-  <owl:versionIRI rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
-  <owl:priorVersion rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
+  <owl:versionIRI rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
+  <owl:priorVersion rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
   <rdfs:label>
    BIBFRAME vocabulary
   </rdfs:label>
   <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-   2025-07-23T12:00:00.000-05:00
+   2025-01-24T12:00:00.000-05:00
   </dcterms:issued>
   <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-   2025-07-23T18:12:22.350407175-04:00
+   2025-02-10T09:52:36.66620558-05:00
   </dcterms:modified>
   <dcterms:description xml:lang="en">
    The Bibframe vocabulary consists of RDF classes and properties used for the description of items cataloged principally by libraries, but may also be used to describe items cataloged by museums and archives. Classes include the three core classes - Work, Instance, and Item - in addition to many more classes to support description. Properties describe characteristics of the resource being described as well as relationships among resources. For example: one Work might be a "translation of" another Work; an Instance may be an "instance of" a particular Bibframe Work. Other properties describe attributes of Works and Instances. For example: the Bibframe property "subject" expresses an important attribute of a Work (what the Work is about), and the property "extent" (e.g. number of pages) expresses an attribute of an Instance.
@@ -5355,13 +5355,15 @@
   </dcterms:modified>
  </owl:DatatypeProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/assigner">
-  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
   <skos:definition>
    Entity that assigned the metadata, such as the entity that assigned a classification number, entity that assigned a name, entity that assigned an identifier.
   </skos:definition>
   <rdfs:label>
    Assigner
   </rdfs:label>
+  <rdfs:comment>
+   Suggested value - bf:Organization or bf:Assigner
+  </rdfs:comment>
   <bf-abstract:sort>
    03o9
   </bf-abstract:sort>
@@ -5380,18 +5382,17 @@
   <dcterms:modified>
    2025-01-23 (Ontological correction - partially addresses [GH121])
   </dcterms:modified>
-  <dcterms:modified>
-   2025-07-15 (Expected value fix [GH132])
-  </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/source">
-  <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
   <skos:definition>
    Resource from which value or label came or was derived, such as the formal source/scheme from which a classification number is taken or derived, list from which an agent name is taken or derived, source within which an identifier is unique.
   </skos:definition>
   <rdfs:label>
    Source
   </rdfs:label>
+  <rdfs:comment>
+   Suggested value - bf:Organization or bf:Assigner
+  </rdfs:comment>
   <bf-abstract:sort>
    03q
   </bf-abstract:sort>
@@ -5409,9 +5410,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2025-01-23 (Ontological correction - partially addresses [GH121])
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-07-09 (Expected value fix [GH132])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/note">
@@ -8891,12 +8889,13 @@
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/enumerationAndChronology">
+  <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
   <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/EnumerationAndChronology"/>
   <skos:definition>
    Numbering and dates of issues or items held.
   </skos:definition>
   <rdfs:label>
-   Enumeration and chronology
+   Numbering or other enumeration and dates associated with issues or items held.
   </rdfs:label>
   <bf-abstract:marcField>
    866-868 (Hold)
@@ -8915,9 +8914,6 @@
   </bf-abstract:status>
   <dcterms:modified>
    2016-04-21 (New)
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-07-15 (Broadened range [GH129])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/heldBy">
@@ -9098,6 +9094,7 @@
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/immediateAcquisition">
+  <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
   <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/ImmediateAcquisition"/>
   <skos:definition>
    Information about the circumstances, e.g., source, date, method, under which the resource was directly acquired.
@@ -9122,9 +9119,6 @@
   </dcterms:modified>
   <dcterms:modified>
    2017-02-06 (Changed from data to object property)
-  </dcterms:modified>
-  <dcterms:modified>
-   2025-07-15 (Broadened range [GH127])
   </dcterms:modified>
  </owl:ObjectProperty>
  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/noteType">

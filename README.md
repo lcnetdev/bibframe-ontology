@@ -6,6 +6,6 @@ determine a transition path for the MARC 21 formats while preserving a robust
 data exchange that has supported resource sharing and cataloging cost savings 
 in recent decades.
 
-## Bibframe Model and Vocabulary (2.x)
-This repository contains the BIBFRAME 2.x Vocabulary [bibframe.rdf](bibframe.rdf).
+## Bibframe Model and Vocabulary
+This repository contains the BIBFRAME Vocabulary [bibframe.rdf](bibframe.rdf).
 It is intended for tracking issues and changes to the vocabulary.

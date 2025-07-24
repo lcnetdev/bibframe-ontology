@@ -1,5 +1,19 @@
 ## Bibframe Changelog
 
+### Bibframe 2.6
+
+Link: [http://id.loc.gov/ontologies/bibframe-2-6-0](http://id.loc.gov/ontologies/bibframe-2-6-0)
+
+Github issues closed, entirely or partially: 
+ * https://github.com/lcnetdev/bibframe-ontology/issues/129
+ * https://github.com/lcnetdev/bibframe-ontology/issues/132
+
+  * Changes to Existing Properties 
+    * [assigner](https://id.loc.gov/ontologies/bibframe.html#p_assigner)
+    * [enumerationAndChronology](https://id.loc.gov/ontologies/bibframe.html#p_enumerationAndChronology)
+    * [immediateAcquisition](https://id.loc.gov/ontologies/bibframe.html#p_immediateAcquisition)
+    * [source](https://id.loc.gov/ontologies/bibframe.html#p_source)
+
 ### Bibframe 2.5
 
 Link: [http://id.loc.gov/ontologies/bibframe-2-5-0](http://id.loc.gov/ontologies/bibframe-2-5-0)
